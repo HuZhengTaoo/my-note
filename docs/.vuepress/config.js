@@ -16,12 +16,17 @@ module.exports = {
       activeHeaderLinks: true,
              
       nav: [
-        { text:'音乐学习',link:'/music/'}
+        { text:'音乐学习',link:'/music/'},
+        { text:'阅读',link:'/read/'}
       ],
       sidebar: {
         '/music/':[
           ['','音乐学习'],
           ['jsonp','jsonp']
+        ],
+        '/read/':[
+          ['','介绍'],
+          ['人类简史','人类简史']
         ]
       }
   }     
