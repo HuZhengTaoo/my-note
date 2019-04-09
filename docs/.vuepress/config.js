@@ -16,17 +16,37 @@ module.exports = {
       activeHeaderLinks: true,
              
       nav: [
-        { text:'音乐学习',link:'/music/'},
-        { text:'阅读',link:'/read/'}
+        { text:'视频学习',items:[
+          {text:'music',link:'/video/music/'},
+        ]
+        },
+        { text:'阅读',link:'/read/'},
+        { text: '前端进阶学习', items:[
+          {text:'mdn',link:'/mdn/'},
+          {text:'你不知道的js',link:'/donot/'},
+          {text:'es6',link:'/es6/'}
+         ] 
+        },
       ],
       sidebar: {
-        '/music/':[
+        '/video/music/':[
           ['','音乐学习'],
           ['jsonp','jsonp']
         ],
         '/read/':[
           ['','介绍'],
           ['人类简史','人类简史']
+        ],
+        '/mdn/':[
+          ['','概述'],
+          ['object','Object'],
+          ['array','Array']
+        ],
+        '/donot/':[
+          ['','概述']
+        ],
+        '/es6':[
+          ['','概述']
         ]
       }
   }     
