@@ -18,9 +18,11 @@ module.exports = {
       nav: [
         { text:'视频学习',items:[
           {text:'music',link:'/video/music/'},
+          {text:'node-serve',link:'/video/node-serve/'}
         ]
         },
         { text:'阅读',link:'/read/'},
+        { text:'分享',link:'/share/'},
         { text: '前端进阶学习', items:[
           {text:'mdn',link:'/mdn/'},
           {text:'你不知道的js',link:'/donot/'},
@@ -33,9 +35,19 @@ module.exports = {
           ['','音乐学习'],
           ['jsonp','jsonp']
         ],
+        '/video/node-serve/':[
+          ['','node-serve'],
+          ['http','http'],
+          ['create-project','从0搭建项目'],
+          ['promise','promise']
+        ],
         '/read/':[
           ['','介绍'],
           ['人类简史','人类简史']
+        ],
+        '/share/':[
+          ['','概述'],
+          ['poster','海报生成踩坑']
         ],
         '/mdn/':[
           ['','概述'],
@@ -45,6 +57,7 @@ module.exports = {
         '/donot/':[
           ['','概述']
         ],
+        
         '/es6':[
           ['','概述']
         ]
