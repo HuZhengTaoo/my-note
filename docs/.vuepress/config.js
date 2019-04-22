@@ -18,7 +18,8 @@ module.exports = {
       nav: [
         { text:'视频学习',items:[
           {text:'music',link:'/video/music/'},
-          {text:'node-serve',link:'/video/node-serve/'}
+          {text:'node-serve',link:'/video/node-serve/'},
+          {text:'nginx',link:'/video/nignx/'}
         ]
         },
         { text:'阅读',link:'/read/'},
@@ -39,7 +40,12 @@ module.exports = {
           ['','node-serve'],
           ['http','http'],
           ['create-project','从0搭建项目'],
-          ['promise','promise']
+          ['promise','promise'],
+          ['login','login'],
+          ['log','log']
+        ],
+        '/video/nignx/':[
+          ['','概述']
         ],
         '/read/':[
           ['','介绍'],
