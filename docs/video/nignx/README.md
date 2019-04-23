@@ -30,3 +30,5 @@ nginx是一个高性能的HTTP和反向代理服务器，也是一个通用的TC
 反向代理对服务端是透明的，对我们是非透明的，即我们并不知道自己访问的是代理服务器，而服务器知道反向代理在为他服务。
 
 [参考](https://mp.weixin.qq.com/s/BA_JZ_kMBFZBE7jjQDNc1Q)
+https://juejin.im/post/5cae9de95188251ae2324ec3
+https://juejin.im/post/5cbc23d0f265da03502b37a0?utm_source=gold_browser_extension
