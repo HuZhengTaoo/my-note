@@ -19,7 +19,9 @@ module.exports = {
         { text:'视频学习',items:[
           {text:'music',link:'/video/music/'},
           {text:'node-serve',link:'/video/node-serve/'},
-          {text:'nginx',link:'/video/nignx/'}
+          {text:'nginx',link:'/video/nignx/'},
+          {text:'微信公众号开发',link:'/video/koa-wechat/'},
+          {text:'http',link:'/video/http/'}
         ]
         },
         { text:'阅读',link:'/read/'},
@@ -42,10 +44,25 @@ module.exports = {
           ['create-project','从0搭建项目'],
           ['promise','promise'],
           ['login','login'],
-          ['log','log']
+          ['log','log'],
+          ['pm2','pm2'],
+          ['koa2','koa2'],
+          ['middleware','middleware'],
+          ['promise','promise'],
+          ['save','save'],
+          ['stream','stream']
+        ],
+        '/video/http/':[
+          ['','概述'],
+          ['1-2','1-2'],
+          ['2-1','2-1']
         ],
         '/video/nignx/':[
           ['','概述']
+        ],
+        '/video/koa-wechat/':[
+          ['','概述'],
+          ['day3','day3']
         ],
         '/read/':[
           ['','介绍'],
