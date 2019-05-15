@@ -21,7 +21,8 @@ module.exports = {
           {text:'node-serve',link:'/video/node-serve/'},
           {text:'nginx',link:'/video/nignx/'},
           {text:'微信公众号开发',link:'/video/koa-wechat/'},
-          {text:'http',link:'/video/http/'}
+          {text:'http',link:'/video/http/'},
+          {text:'serverless',link:'/video/serverless/'}
         ]
         },
         { text:'阅读',link:'/read/'},
@@ -54,8 +55,24 @@ module.exports = {
         ],
         '/video/http/':[
           ['','概述'],
+          ['1-1','1-1'],
           ['1-2','1-2'],
-          ['2-1','2-1']
+          ['2-1','2-1'],
+          ['2-2','2-2'],
+          ['2-3','2-3'],
+          ['2-4','2-4'],
+          ['2-5','2-5'],
+          ['2-6','2-6']
+        ],
+        '/video/serverless/':[
+          ['','概述'],
+          ['1-1','快速上手小程序云开发'],
+          ['2-1','云开发-基础概念'],
+          ['3-1','数据库项目实战']
+        ],
+        '/video/7yue-node/':[
+          ['','概述'],
+          ['1-1','导学node']
         ],
         '/video/nignx/':[
           ['','概述']
