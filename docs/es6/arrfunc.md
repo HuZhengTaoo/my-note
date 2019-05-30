@@ -1,5 +1,5 @@
 [arrfunc](https://mp.weixin.qq.com/s/N0ahVkwVhDpnzGdZyC8jQg)
-
+https://juejin.im/post/5c76972af265da2dc4538b64
 ### 快速搭建vuex文件
 
 - 项目目录结构

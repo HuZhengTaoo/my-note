@@ -22,7 +22,8 @@ module.exports = {
           {text:'nginx',link:'/video/nignx/'},
           {text:'微信公众号开发',link:'/video/koa-wechat/'},
           {text:'http',link:'/video/http/'},
-          {text:'serverless',link:'/video/serverless/'}
+          {text:'serverless',link:'/video/serverless/'},
+          {text:'7yue-node',link:'/video/7yue-node/'}
         ]
         },
         { text:'阅读',link:'/read/'},
@@ -72,7 +73,10 @@ module.exports = {
         ],
         '/video/7yue-node/':[
           ['','概述'],
-          ['1-1','导学node']
+          ['1-1','导学node'],
+          ['2-1','异步变成的那点事'],
+          ['3-1','路由系统'],
+          ['4-1','异步异常与原句异常处理']
         ],
         '/video/nignx/':[
           ['','概述']
