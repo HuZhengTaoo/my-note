@@ -31,7 +31,9 @@ module.exports = {
         { text: '前端进阶学习', items:[
           {text:'mdn',link:'/mdn/'},
           {text:'你不知道的js',link:'/donot/'},
-          {text:'es6',link:'/es6/'}
+          {text:'es6',link:'/es6/'},
+          {text:'面试',link:'/interview/'},
+          {text:'vue源码',link:'/video/vue/'}
          ] 
         },
       ],
@@ -76,7 +78,9 @@ module.exports = {
           ['1-1','导学node'],
           ['2-1','异步变成的那点事'],
           ['3-1','路由系统'],
-          ['4-1','异步异常与原句异常处理']
+          ['4-1','异步异常与原句异常处理'],
+          ['5-1','校验器和数据表'],
+          ['6-1','用户身份系统']
         ],
         '/video/nignx/':[
           ['','概述']
@@ -85,6 +89,13 @@ module.exports = {
           ['','概述'],
           ['day3','day3']
         ],
+        '/interview/':[
+          ['','概述'],
+          ['basic','基础'],
+          ['this','this']
+          ['closure','闭包'],
+          ['prototype','原型链']
+        ],
         '/read/':[
           ['','介绍'],
           ['人类简史','人类简史']
@@ -92,6 +103,10 @@ module.exports = {
         '/share/':[
           ['','概述'],
           ['poster','海报生成踩坑']
+        ],
+        '/video/vue/':[
+          ['','概述'],
+          ['chapter1','第一章']
         ],
         '/mdn/':[
           ['','概述'],
