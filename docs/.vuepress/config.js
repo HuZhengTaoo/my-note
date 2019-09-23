@@ -26,6 +26,11 @@ module.exports = {
           {text:'7yue-node',link:'/video/7yue-node/'}
         ]
         },
+        {
+          text:'系统学习',items:[
+            {text:'promise',link:'/total/'}
+          ]
+        },
         { text:'阅读',link:'/read/'},
         { text:'分享',link:'/share/'},
         { text: '前端进阶学习', items:[
@@ -41,6 +46,11 @@ module.exports = {
         '/video/music/':[
           ['','音乐学习'],
           ['jsonp','jsonp']
+        ],
+        '/total/':[
+          ['','概述'],
+          ['function','function'],
+          ['promise','promise']
         ],
         '/video/node-serve/':[
           ['','node-serve'],

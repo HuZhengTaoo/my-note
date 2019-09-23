@@ -17,4 +17,5 @@ git add -A
 git commit -m 'deploy'
 
 # 如果发布到 https://<USERNAME>.github.io
-git push -f git@github.com:huzhengtaoo/huzhengtaoo.github.io.git master
+# git push -f git@github.com:huzhengtaoo/huzhengtaoo.github.io.git master
+git push -f http://file.iqidao.com:50000/huzhengtao/weapp-markdown.git master
