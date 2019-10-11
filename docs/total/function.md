@@ -1,3 +1,12 @@
+## function 概述
+
+### 高阶函数(hf)
+
+- 高阶函数：
+- 1）你可以将函数当做另一个函数的参数传入
+- 2) 如果一个函数 返回一个新的函数那么这个函数也是高阶函数
+- 高阶函数的解决的问题 ：核心功能,封装起来 不对他进行更改
+
 ```js
 //高阶函数
 // 一个函数的参数是一个函数 回调
@@ -7,8 +16,10 @@ function a(){
 a(()=>{
 
 })
-// 一个函数返回一个函数 (拆分函数)
+```
 
+```js
+// 一个函数返回一个函数 (拆分函数)
 // 函数的before
 // 希望将核心的逻辑提取出来，在外面增加功能
 // 重写原型上的方法
@@ -20,6 +31,9 @@ Function.prototype.before = function(beforeFn){
     this(...args) // 展开运算符 say([1,2,3])
   }
 }
+```
+
+```js
 //面向AOP切片 编程 也是装饰器模式 把核心抽离 在核心基础上增加功能
 const say = (...args) => { // 剩余运算符把所有的参数组成一个数组
   console.log('说话')
@@ -37,14 +51,55 @@ newSay()
 // react 事务的改变 可以在前面和后面通知增加方法
 ``` 
 
+
+
+
+ 
+
+
+### 事务 transaction
+```js 
+// setState 事务 setState 是同步还是异步
+function perform(cb,arr){
+    return function(){ // 这个不是洋葱模型
+        arr.forEach(wrapper=>wrapper.initialize());
+        cb();
+        arr.forEach(wrapper=>wrapper.close());
+    }
+}
+let newFunc = perform(function(){
+    console.log('普通函数 核心功能')
+},[ // 数组
+    { // wrapper1
+        initialize(){
+            console.log('wrapper1 start')
+        },
+        close(){
+            console.log('close1')
+        }
+    },
+    { // wrapper2
+        initialize(){
+            console.log('wrapper2 start')
+        },
+        close(){
+            console.log('close2')
+        }
+    }
+])
+newFunc();
+// wrapper1 start,wrapper2 start  function close1 close2
+```
+
 ### 函数科里化
+
+- 函数柯里化 我需要把核心的功能 提出一个更细小的函数
+-
 
 ```js 
  // 柯里化 我们可以把一个大函数拆分成很多个函数
 
  // 判断类型 Object.prototype.toString.call
-
-
  // 高阶函数中包含 科里化 可以保留参数 bind
 //  console.log(Object.prototype.toString.call([]))
 
@@ -90,6 +145,7 @@ console.log(r)
 // let fn = (a,b,c,d)=>{}
 // fn.length === 4
 ``` 
+### 科里化实践
 
 ```js 
 const checkType = (type,content) => {
@@ -104,6 +160,7 @@ types.forEach(type=>{
 
 console.log(utils.isString('123'))
 ```
+### 科里化处理事务
 
 ```js
 // 事务 开始的时候 做某件事 结束的时候在做某件事

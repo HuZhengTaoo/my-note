@@ -27,6 +27,11 @@ module.exports = {
         ]
         },
         {
+          text:'算法学习',items:[
+            {text:'第一番',link:'/algorithm/'}
+          ]
+        },
+        {
           text:'系统学习',items:[
             {text:'promise',link:'/total/'}
           ]
@@ -47,10 +52,17 @@ module.exports = {
           ['','音乐学习'],
           ['jsonp','jsonp']
         ],
+        '/algorithm/':[
+          ['','概述'],
+          ['1','时间复杂度'],
+          ['string','string'],
+          ['array','array']
+        ],
         '/total/':[
           ['','概述'],
           ['function','function'],
-          ['promise','promise']
+          ['promise','promise'],
+          ['es6','es6']
         ],
         '/video/node-serve/':[
           ['','node-serve'],
